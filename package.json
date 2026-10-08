@@ -1,0 +1,29 @@
+{
+  "name": "vfaas-2fa",
+  "version": "1.0.0",
+  "description": "2fa for versus identities",
+  "license": "ISC",
+  "author": "Ṅero Moskalyk",
+  "type": "commonjs",
+  "main": "anchor.js",
+   "repository": {
+    "type": "git",
+    "url": "github.com/moskalyk/kai.git"
+  },
+  "keywords": [
+    "2fa",
+    "security",
+    "data",
+    "viz",
+    "fluid",
+    "teakjs"
+  ],
+  "scripts": {
+    "cli:build":"node compiler/cli_build.js",
+    "build":"node compiler/index.js",
+    "watch": "node liveReload/index.js",
+    "start":"npx serve .",
+    "start:signalling": "node vendor/vfaas.net/signal-server/index.js",
+    "test": "node tests/*.test.js"
+  }
+}
